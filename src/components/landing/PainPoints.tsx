@@ -1,26 +1,26 @@
-import { FileSpreadsheet, ShieldAlert, TrendingDown } from "lucide-react";
+import { FileSpreadsheet, Clock, DollarSign } from "lucide-react";
 
 const painPoints = [
   {
     icon: FileSpreadsheet,
-    title: "Excel-файлы гуляют по почте и мессенджерам",
+    title: "Excel и Google-таблицы не справляются",
     description:
-      "Менеджеры проектов присылают обновления в разных форматах. Актуальную информацию приходится собирать по крупицам. На подготовку отчёта для руководства уходит несколько дней.",
-    quote: "«Каждый понедельник я трачу полдня, чтобы понять, кто чем занимается»",
+      "Данные разбросаны по десяткам файлов. Связи между таблицами теряются. Формулы ломаются при добавлении новых строк. Совместная работа превращается в хаос.",
+    quote: "«Каждый раз боюсь, что кто-то удалит формулу в общем файле»",
   },
   {
-    icon: ShieldAlert,
-    title: "Конфиденциальные данные под угрозой",
+    icon: Clock,
+    title: "Заказная разработка — это долго и дорого",
     description:
-      "Зарплатные ставки, квалификация сотрудников, бюджеты проектов хранятся в общедоступных таблицах. Контролировать доступ к чувствительной информации практически невозможно.",
-    quote: "«Файл с зарплатами случайно попал в общий чат...»",
+      "Месяцы ожидания, сотни тысяч рублей за простое приложение. Любое изменение требует новой итерации с разработчиками. Бизнес не может ждать так долго.",
+    quote: "«Нам насчитали 3 месяца и миллион рублей за базу клиентов»",
   },
   {
-    icon: TrendingDown,
-    title: "План найма не соответствует реальности",
+    icon: DollarSign,
+    title: "Готовые решения не подходят под процессы",
     description:
-      "ФОТ растёт быстрее выручки. Владелец не видит полной картины: сколько сотрудников на каких проектах, когда нужен новый найм, где перерасход бюджета.",
-    quote: "«Наняли 5 разработчиков, а проектов для них нет»",
+      "CRM и ERP системы навязывают свою логику работы. Приходится подстраивать бизнес под софт, а не наоборот. Платите за функции, которые не используете.",
+    quote: "«В CRM 200 полей, а нам нужно всего 15, но других»",
   },
 ];
 
@@ -31,10 +31,10 @@ const PainPoints = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Узнаёте себя?
+            Знакомые проблемы?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Эти проблемы знакомы большинству растущих компаний
+            Вместо «тяжёлого» и дорогостоящего ПО — простая система с неограниченными возможностями
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const PainPoints = () => {
           {painPoints.map((point, index) => (
             <div
               key={index}
-              className="group relative bg-secondary/30 rounded-2xl p-8 border border-border hover:border-accent/30 transition-all duration-300 hover:shadow-lg"
+              className="group relative bg-secondary/30 rounded-2xl p-8 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
             >
               {/* Icon */}
               <div className="w-14 h-14 rounded-xl bg-destructive/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
