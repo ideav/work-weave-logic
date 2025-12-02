@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import integramLogo from "@/assets/integram-logo.svg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,9 +16,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Возможности", href: "#solution" },
+    { label: "Что предлагаем", href: "#solution" },
     { label: "Преимущества", href: "#benefits" },
     { label: "Отзывы", href: "#testimonials" },
+    { label: "Тарифы", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -33,10 +35,7 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">R</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">ResourcePlan</span>
+            <img src={integramLogo} alt="Интеграм" className="h-10" />
           </a>
 
           {/* Desktop Navigation */}
@@ -58,7 +57,7 @@ const Header = () => {
               Войти
             </Button>
             <Button className="btn-primary">
-              Попробовать бесплатно
+              Протестировать сервис
             </Button>
           </div>
 
@@ -90,7 +89,7 @@ const Header = () => {
                   Войти
                 </Button>
                 <Button className="btn-primary w-full">
-                  Попробовать бесплатно
+                  Протестировать сервис
                 </Button>
               </div>
             </div>
