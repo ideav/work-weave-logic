@@ -12,43 +12,43 @@ import {
 const benefits = [
   {
     icon: Rocket,
-    title: "Прототип за 1 день",
-    description: "Начните работу буквально через 15 минут после регистрации",
+    title: "Быстрый старт",
+    description: "Начните работу за 1 день, а не за месяцы внедрения",
   },
   {
     icon: MousePointer,
-    title: "Без программирования",
-    description: "No-code интерфейс понятен с первых минут, не нужен опыт разработки",
+    title: "Интуитивный интерфейс",
+    description: "Не нужно обучать сотрудников неделями — интерфейс понятен с первых минут",
   },
   {
     icon: Settings,
-    title: "Гибкая настройка",
-    description: "Адаптируйте систему под свои процессы, а не наоборот",
+    title: "Гибкость настройки",
+    description: "Адаптируется под структуру вашей компании и проектов",
   },
   {
     icon: Shield,
-    title: "Российский продукт",
-    description: "Данные хранятся на территории РФ, соответствие 152-ФЗ",
+    title: "Российское решение",
+    description: "Данные хранятся на территории РФ, полное соответствие требованиям 152-ФЗ",
   },
   {
     icon: TrendingUp,
     title: "Масштабируемость",
-    description: "От простой таблицы до базы на 500 млн записей",
+    description: "Растёт вместе с вашей компанией: от 70 до 700+ сотрудников",
   },
   {
     icon: Headphones,
-    title: "Обучение за 7 дней",
-    description: "Интерактивные уроки и поддержка на русском языке",
+    title: "Поддержка 24/7",
+    description: "Техподдержка на русском языке в любое время",
   },
   {
     icon: Puzzle,
-    title: "API и Webhook",
-    description: "Интеграции с любыми внешними системами и сервисами",
+    title: "Интеграции",
+    description: "API для интеграции с вашими CRM, ERP, бухгалтерскими системами",
   },
   {
     icon: RefreshCw,
-    title: "Постоянное развитие",
-    description: "Новые функции и улучшения на основе запросов клиентов",
+    title: "Регулярные обновления",
+    description: "Новые функции на основе запросов клиентов каждый месяц",
   },
 ];
 
@@ -59,10 +59,10 @@ const Benefits = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Почему выбирают Интеграм
+            Почему выбирают нашу систему
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Гибкий функционал, понятный интерфейс и неограниченные возможности
+            Мы создали продукт, который решает реальные проблемы российских компаний
           </p>
         </div>
 
@@ -71,11 +71,11 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              className="group bg-card rounded-2xl p-6 border border-border hover:border-accent/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <benefit.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                <benefit.icon className="w-6 h-6 text-accent" />
               </div>
 
               {/* Title */}
@@ -95,16 +95,16 @@ const Benefits = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-4 bg-card rounded-2xl px-8 py-4 border border-border shadow-sm">
             <div className="text-left">
-              <p className="text-sm text-muted-foreground">Говорят, что Интеграм —</p>
-              <p className="font-semibold text-foreground">российский аналог Airtable</p>
+              <p className="text-sm text-muted-foreground">Сравните сами:</p>
+              <p className="font-semibold text-foreground">Excel vs ResourcePlan</p>
             </div>
             <div className="h-8 w-px bg-border" />
             <div className="flex gap-2">
-              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
-                Но мощнее
+              <span className="px-3 py-1 rounded-full bg-destructive/10 text-destructive text-sm">
+                Часы → Минуты
               </span>
               <span className="px-3 py-1 rounded-full bg-success/10 text-success text-sm">
-                И в России
+                Хаос → Порядок
               </span>
             </div>
           </div>
