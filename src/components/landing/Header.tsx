@@ -36,7 +36,7 @@ const Header = () => {
             <img
               src="/logo-integram.svg"
               alt="Интеграм"
-              className="h-8"
+              className="h-12"
             />
           </a>
 
